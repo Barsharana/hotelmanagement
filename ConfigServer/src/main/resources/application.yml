@@ -1,0 +1,13 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: CONFIG-SERVER
+
+  cloud:
+    config:
+      server:
+        git:
+          bootstrap: true
+          uri: https://github.com/Barsharana/hotel-config
+          clone-on-start: true
